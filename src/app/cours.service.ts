@@ -7,7 +7,7 @@ import {Cours} from "./cours/model/Cours";
   providedIn: 'root'
 })
 export class CoursService {
-  private apiUrl = 'http://192.168.153.128:8010/SpringMVC/Cours'; // Remplacez par l'URL de votre backend
+  private apiUrl = 'http://localhost:8010/SpringMVC/Cours'; // Remplacez par l'URL de votre backend
 
   constructor(private http: HttpClient) {}
 
