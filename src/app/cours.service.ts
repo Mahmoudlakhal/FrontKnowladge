@@ -7,7 +7,7 @@ import {Cours} from "./cours/model/Cours";
   providedIn: 'root'
 })
 export class CoursService {
-  private apiUrl = 'http://localhost:8010/SpringMVC/Cours'; // Remplacez par l'URL de votre backend
+  private apiUrl = 'http://192.168.153.128:8010/SpringMVC/Cours'; // Remplacez par l'URL de votre backend
 
   constructor(private http: HttpClient) {}
 
@@ -36,7 +36,7 @@ export class CoursService {
   }
 
   getCoursById(id: number): Observable<Cours> {
-    return this.http.get<Cours>(`http://localhost:8010/SpringMVC/Cours/${id}`);
+    return this.http.get<Cours>(`http://192.168.153.128:8010/SpringMVC/Cours/${id}`);
   }
 
   deleteCours(coursId: number): Observable<any> {

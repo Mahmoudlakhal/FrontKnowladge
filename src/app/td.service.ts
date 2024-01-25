@@ -7,7 +7,7 @@ import {TD} from "./model/TD";
   providedIn: 'root',
 })
 export class TDService {
-  private apiUrl = 'http://localhost:8070/td';
+  private apiUrl = 'http://192.168.153.128:8070/td';
 
   constructor(private http: HttpClient) {}
 
@@ -22,7 +22,7 @@ export class TDService {
     formData.append('categorie', td.categorie);
     formData.append('prix', td.prix);
 
-    return this.http.post<TD>('http://localhost:8070/td/add-td', formData);
+    return this.http.post<TD>('http://192.168.153.128:8070/td/add-td', formData);
   }
 }
 

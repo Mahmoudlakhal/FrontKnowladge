@@ -7,10 +7,10 @@ import { User } from "./model/user";
   providedIn: 'root'
 })
 export class UserService {
-  private apiUrl = 'http://localhost:8010/SpringMVC/user/ajouterUser';
-  private apiUrl2 = 'http://localhost:8010/SpringMVC/api/auth/login';
-  private apiUrl3 = 'http://localhost:8010/SpringMVC/user/GetAllUser';
-  private apiUrl4 = 'http://localhost:8010/SpringMVC/user/remove-User';
+  private apiUrl = 'http://192.168.153.128:8010/SpringMVC/user/ajouterUser';
+  private apiUrl2 = 'http://192.168.153.128:8010/SpringMVC/api/auth/login';
+  private apiUrl3 = 'http://192.168.153.128:8010/SpringMVC/user/GetAllUser';
+  private apiUrl4 = 'http://192.168.153.128:8010/SpringMVC/user/remove-User';
 
   constructor(private http: HttpClient) { }
 
